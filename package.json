@@ -1,0 +1,20 @@
+{
+  "name": "devyntra-agent",
+  "version": "0.1.0",
+  "description": "Devyntra Agent - Lightweight server agent for connecting Linux servers to Devyntra",
+  "main": "agent.js",
+  "scripts": {
+    "start": "node agent.js"
+  },
+  "dependencies": {
+    "ws": "^8.18.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sohan20051519/devyntra-agent.git"
+  }
+}
