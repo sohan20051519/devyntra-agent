@@ -19,7 +19,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '18'
 
       - name: Install dependencies
         run: npm install
@@ -28,10 +28,10 @@ jobs:
         run: npm install -g pkg
 
       - name: Build linux-x64 binary
-        run: pkg agent.js --target node20-linux-x64 --output devyntra-agent-linux-amd64
+        run: pkg agent.js --target node18-linux-x64 --output devyntra-agent-linux-amd64
 
       - name: Build linux-arm64 binary
-        run: pkg agent.js --target node20-linux-arm64 --output devyntra-agent-linux-arm64
+        run: pkg agent.js --target node18-linux-arm64 --output devyntra-agent-linux-arm64
 
       - name: Make binaries executable
         run: |
